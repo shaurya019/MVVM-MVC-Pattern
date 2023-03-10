@@ -2,6 +2,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../utils /utils.dart';
+
 class splashScreen extends StatefulWidget {
   const splashScreen({Key? key}) : super(key: key);
 
@@ -15,7 +17,8 @@ class _splashScreenState extends State<splashScreen> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: (){
-
+          Utils.toastMessageCenter('Shaurya');
+          Utils.toastMessage('Shaurya');
         },
       ),
     );
